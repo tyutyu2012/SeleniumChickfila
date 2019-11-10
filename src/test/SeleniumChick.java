@@ -7,7 +7,7 @@ import org.openqa.selenium.support.ui.Select;
 
 public class SeleniumChick {
 	public static void main(String[] args) throws InterruptedException {
-		System.setProperty("webdriver.chrome.driver", "/Users/tongyu/eclipse-workspace/SeleniumChickfila/src/test/chromedriver");
+		System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir")+"/src/test/chromedriver");
 		WebDriver webdriver = new ChromeDriver();
 		webdriver.get("https://www.chick-fil-a.com/Contact-Support/Send-Feedback");
 		Thread.sleep(3000);
