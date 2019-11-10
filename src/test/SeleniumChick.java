@@ -38,6 +38,8 @@ public class SeleniumChick {
 		Select state = new Select(webdriver.findElement(By.cssSelector("select[id='selectAState']")));
 		state.selectByValue("TX");
 		Thread.sleep(5000);
+		Select city = new Select(webdriver.findElement(By.cssSelector("select[id='selectACity']")));
+		state.selectByValue("Houston");
 	}
 
 }
